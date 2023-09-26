@@ -1,6 +1,8 @@
 ## SGBD - SISTEMAS GERENCIADORES DE BANCO DE DADOS, Oferta 2023/2, BCC
 
-#### Bem-vindo(a)!
+### Bem-vindo(a)!
+
+O plano da disciplina está disponível [aqui](./media/sgbd-2023-2-bcc-plano.pdf).<br>
 
 ### Para refletir...
 
