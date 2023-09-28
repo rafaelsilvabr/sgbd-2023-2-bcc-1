@@ -13,7 +13,6 @@
 - Tipo de dado e restrição de integridade.
 - Modelo de dados e esquema de banco de dados.
 - Redundância e redundância controlada.
-- Independência física e independência lógica.
 - Modelo entidade relacionamento e modelo relacional.
 
 <hr style="border:2px solid blue">
