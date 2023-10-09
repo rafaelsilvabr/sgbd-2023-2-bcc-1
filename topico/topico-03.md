@@ -5,14 +5,13 @@
 
 |_Item do conteúdo_|_Item do conteúdo_|
 |-|-|
-|<ins>1. Visão geral</ins>|9. _Buffering_ de blocos|
-|<ins>2. Armazenamento físico</ins>|10. Alocação de blocos de arquivo no disco|
-|<ins>3. Arquivo, bloco e registro</ins>|11. Acesso a registros|
-|4. Registro de tamanho fixo|12. Armazenamento do dicionário de dados|
-|5. Registro de tamanho variável|13. Organização de arquivos _heap_|
-|6. Objetos grandes|14. Organização de arquivos sequenciais|
-|7. Organização de registros em blocos<br>(espalhada e não espalhada)|15. Organização de arquivos _hashing_|
-|8. Cabeçalho do arquivo||
+|1. <ins>**VISÃO GERAL**</ins>|8. Cabeçalho do arquivo|
+|2. <ins>**ARMAZENAMENTO FÍSICO**</ins>|9. Alocação de blocos de arquivo no disco|
+|3. <ins>**ARQUIVO, BLOCO E REGISTRO**</ins>|10. Acesso a registros|
+|4. _Buffering_ de blocos|11. Armazenamento do dicionário de dados|
+|5. Registro de tamanho fixo|12. Organização de arquivos _heap_|
+|6. Registro de tamanho variável|13. Organização de arquivos sequenciais|
+|7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. Organização de arquivos _hashing_|
 
 <hr style="border:2px solid blue">
 
@@ -170,6 +169,19 @@ Um bloco tipicamente <ins>contém vários registros</ins>:
 - o conjunto exato de registros que um bloco contém depende da forma de organização física dos dados utilizada;
 - assume-se que nenhum registro é maior que um bloco: é sempre verdade?
 - quais itens de dados podem ser significativamente maiores que um bloco?
+
+#### <ins>ACESSO AO BLOCO</ins>
+
+Em geral, um único número chamado LBA (endereço de _bloco lógico_), que é um número entre **0** e **n** (assumindo que a capacidade total do disco é de $n+1$ blocos), é mapeado automaticamente para o bloco físico pelo controlador de acesso ao dispositivo.
+
+#### <ins>BUFFER</ins>
+
+Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principal (armazenamento primário) para armazenar um bloco:
+- Para um comando de leitura, o bloco do disco é copiado para o _buffer_;
+- Para um comando de gravação, o conteúdo do _buffer_ é copiado para o bloco do disco.
+
+Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos como uma unidade:
+- Nesse caso, o tamanho do _buffer_ é ajustado para corresponder ao número de bytes no _cluster_.
 
 <hr style="border:2px solid blue">
 
