@@ -21,9 +21,9 @@ O desempenho de sistemas computacionais depende de três elementos fundamentais:
 - computação;
 - comunicação;
 - armazenamento (<ins>memória</ins>):
-  - um <ins>elemento sensível</ins> em aplicações de banco de dados.
+  - <ins>elemento sensível</ins> em aplicações de banco de dados.
 
-Requisitos ideais de uma memória:
+Requisitos <ins>ideais</ins> de uma memória (apenas teórico):
 - tamanho ilimitado;
 - acesso instantâneo para escrita ou leitura [de dados].
 
@@ -48,15 +48,15 @@ Conceitos para ter atenção:
 - armazenamento volátil/não volátil; armazenamento de longo prazo; armazenamento primário/secundário/terciário; armazenamento de acesso sequencial/acesso direto.
 
 Contradição para os requisitos de uma memória:
-- quanto maior a memória maior será o seu tempo de acesso;
+- quanto maior a memória, maior será o seu tempo de acesso;
 - solução:
-  - criar uma hierarquia de memória;
-  - "ilusão" para o processador, de forma que a memória pareça grande e rápida o suficiente para não ser gargalo no sistema.
+  - criar uma <ins>hierarquia de memória</ins>;
+  - "ilusão" para o processador, de forma que a memória pareça grande e rápida o suficiente para não ser <ins>gargalo no sistema</ins>.
 
 #### <ins>HIERARQUIA DE MEMÓRIA</ins>:
 - organização em níveis de memória;
-- cada nível contêm uma cópia <ins>do código e dos dados</ins> mais usados em cada instante; 
-- quanto mais "perto" a memória se encontra do processador, mais rápido será o acesso aos dados (maior o custo por byte, menor a capacidade de armazenamento).
+- cada nível contêm uma cópia <ins>das **instruções** (código) e dos **dados**</ins> mais usados em cada instante; 
+- quanto mais "perto" a memória se encontra do processador, mais rápido será o acesso aos dados (<ins>maior o custo</ins> por byte, <ins>menor a capacidade</ins> de armazenamento).
 
 <img src="../media/memoria-hierarquia-1.jpg" width="400"><img src="../media/memoria-hierarquia-2.jpg" width="300">
 
@@ -80,13 +80,13 @@ Um programa 'executável' tem instruções ordenadas sequencialmente:
 - na execução de um programa, o processador busca instruções sequencialmente na memória, exceto quando a sequência de acesso é alterada: (i) ocorre um _loop_; ou (ii) ocorre um comando de desvio, tal como a chamada de uma subrotina.
 
 <ins>Localidade Temporal</ins>: 
-- se um endereço foi referenciado, é provável que ele seja referenciado novamente em pouco tempo:
+- se um endereço [de memória] foi referenciado, é provável que ele seja referenciado novamente em pouco tempo:
   - exemplo: _loops_ repetem um mesmo conjunto de instruções;
 - os dados (ou instruções) acessados recentemente tendem a ser acessados novamente em um futuro próximo;
 - a _cache_ mantém cópias de dados recentemente usados para o acesso rápido.
 
 <ins>Localidade Espacial</ins>:
-- se um endereço foi referenciado, existe grande probabilidade do endereço seguinte ser referenciado:
+- se um endereço [de memória] foi referenciado, existe grande probabilidade do endereço seguinte ser referenciado:
   - exemplo: execução sequencial de comandos;
 - os dados próximos a um endereço de memória tendem a ser acessados conjuntamente;
 - a _cache_ e a RAM carregam <ins>blocos de dados adjacentes</ins>, para reduzir o tempo de acesso subsequente.

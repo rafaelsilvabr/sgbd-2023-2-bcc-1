@@ -53,8 +53,8 @@ Em síntese, ao empregar o **_double buffering_**:
 #### <ins>EXECUÇÃO INTERCALADA _vs._ EXECUÇÃO PARALELA</ins>
 
 Quando <ins>uma única CPU</ins> controla vários processos, a execução paralela não é possível (ver figura a seguir): 
-- Na figura à esquerda, os processos A e B estão rodando concorrentemente de forma intercalada.
-- Na figura à direita, os processos C e D estão rodando concorrentemente de forma paralela.
+- Na figura à esquerda, os processos A e B estão rodando concorrentemente de <ins>forma intercalada</ins>.
+- Na figura à direita, os processos C e D estão rodando concorrentemente de <ins>forma paralela</ins>.
 
 <img src="../media/buffer-2.jpg" width="400">
 
@@ -66,7 +66,7 @@ Uma reflexão:
 - _Buffer_ - Área na memória principal para receber blocos (páginas) de dados da memória secundária.
 - _Double buffering_ - Estratégia para a melhoria de eficência de execução:
   - execução da operação de E/S entre o memória secundária e a memória principal em uma área de _buffer_, concomitantemente com o processamento dos dados de outro _buffer_.
-- Visto que o _buffer pool_ possui tamanho limitado:
+- Visto que o <ins>_buffer pool_ possui tamanho limitado</ins>:
   - o _buffer pool_ é compartilhado pelas transações das diversas aplicações, e seu tamanho é um parâmetro do próprio SGBD, que é especificado pelo DBA (o administrador do banco de dados).
   - então, como decidir <ins>que páginas (blocos) serão substituídas no _buffer pool_ (memória principal)</ins> para acomodar os blocos recém-solicitados?
 
@@ -88,10 +88,11 @@ Quando uma determinada página é solicitada, o gerenciador de _buffer_ verifica
   -  aumenta a contagem de pinos da página solicitada.
 - Em caso negativo:
   1. escolhe uma <ins>página para substituição</ins>, usando uma <ins>política de substituição de _buffer_</ins>;
-  2. se o _dirty bit_ da página para substituição fou 1 (um):
+  2. se o _dirty bit_ da página escolhida para substituição for 1 (um):
      - grava a página para substituição no disco, substituindo a cópia antiga da página.
   3. copia a <ins>página solicitada</ins> no _buffer_ liberado da página para substituição;
-  4. aumenta sua contagem de pinos sa página solicitada;
+     - a contagem de pinos dessa página é definida como 0 (zero) ?
+  4. aumenta sua contagem de pinos da página solicitada;
 - O endereço da memória principal da nova página é passado para o aplicativo solicitante.
 
 > O que acontece se:<br>_(i)_ a página solicitada não estiver disponível no _buffer pool_; e<br>_(ii)_ não houver qualquer página não fixada disponível no _buffer pool_ ??
@@ -115,9 +116,9 @@ Os buffers são [logicamente] dispostos como um círculo, semelhante a um <ins>r
     - quando um bloco é lido (ou acessado) em um _buffer_, o sinalizador desse _buffer_ é definido como 1 (um).
 - O ponteiro do relógio está posicionado em um <ins>_buffer_ atual</ins>.
 - Quando o gerenciador de _buffer_ precisa de um _buffer_ para um novo bloco:
-  - o ponteiro gira até encontrar um _buffer_ com sinalizador igual a 0 (zero), então elege este _buffer_ para substituição:
+  - o ponteiro gira até encontrar um _buffer_ com sinalizador igual a 0 (zero), então elege esse _buffer_ para substituição:
     - obviamente, se o _dirty bit_ do _buffer_ estiver ativado, a página (conteúdo) do _buffer_ será gravada em disco, substituindo assim a página antiga em seu endereço no disco.
-  - ao girar o ponteiro, se o ponteiro passar por um _buffer_ com sinalizador igual a 1 (um), o valor 0 (zero) será atribuído ao sinalizador.
+  - ao girar o ponteiro, se o ponteiro passar por um _buffer_ com sinalizador igual a 1 (um), o valor 0 (zero) será atribuído ao sinalizador (e o ponteiro passa para o próximo _buffer_).
 - em suma, um bloco é substituído de seu _buffer_ somente se não for acessado até que o ponteiro complete uma rotação, e o sinalizador do _buffer_ tenha o valor 0 (zero).
 
 #### <ins>3. _First-In-First-Out_ (FIFO)</ins>
@@ -126,11 +127,11 @@ Quando um _buffer_ é necessário, aquele que foi ocupado por mais tempo [por um
 - O gerenciador de _buffer_ registra o tempo em que cada página é carregada em um _buffer_:
   - diferentemente da política LRU, não precisa controlar o tempo em que as páginas são acessadas.
 - <ins>Questão:</ins> Um bloco que permanece no _buffer_ por um longo período deveria ser o escolhido para substituição ?
-  - por exemplo, se for o bloco raiz de uma estrutura em árvore que implementa um índice ... for descartado ... pode imediatamente ser necessário trazê-lo de volta para um _buffer_ ?
+  - por exemplo, se o bloco raiz de uma estrutura em árvore que implementa um índice ... for descartado ... no momento seguinte pode ser necessário trazê-lo de volta para um _buffer_ ?
 
 Reflexões:
 - Modificação da política **FIFO**:
-  - garantir que os <ins>blocos fixados</ins>, como o bloco raiz de um índice, possam permanecer no _buffer_.
+  - garantir que os <ins>blocos fixados</ins>, tal como o bloco raiz de um índice, possam permanecer no _buffer_.
 - Modificação da política **_Clock Policy_**:
   - garantir que <ins>_buffers_ importantes</ins> tenham o valor do sinalizador superior a 1 (um) e, portanto, não estarão sujeitos a substituição após várias rotações do ponteiro. 
 - Há cenários em que o SGBD necessita gravar determinados blocos no disco, mesmo que seu _buffer_ não tenha sido selecionado para substituição:
