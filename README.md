@@ -6,7 +6,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2023-2-bcc-plano.pdf
 
 ### Para refletir...
 
-1. Qual a missão de um SGBD?
+1. Qual a distinção entre _método de acesso_ e _organização de arquivo_?
 
 ### Tópicos ativos
 
