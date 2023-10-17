@@ -86,7 +86,7 @@ O <ins>cabeçalho do bloco</ins> contém (ver figura abaixo):
 Os registros podem ser <ins>movimentados dentro de uma página</ins> para mantê-los contíguos:
 - A <ins>operação de exclusão</ins> causa a movimentação dos registros à esquerda do registro excluído.
 - A cada movimentação, a(s) entrada(s) no cabeçalho precisa(m) ser atualizada(s).
-- O custo da movimentação é 'baixo', pois o bloco possui tabanho limitado.
+- O custo da movimentação é 'baixo', pois o bloco possui tamanho limitado.
 - Essa movimentação previne a fragmentação dentro do bloco.
 
 Qualquer <ins>ponteiro externo ao bloco</ins>:
