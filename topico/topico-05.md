@@ -73,10 +73,10 @@ O <ins>cabeçalho de arquivo</ins>:
 - É um <ins>descritor de arquivo</ins> que contém <ins>metadados</ins> úteis aos programas do sistema que acessam os registros.
 - Alguns exemplos de metadados:
   - endereços de disco dos blocos de arquivo;
-  - para registros não estendidos de comprimento fixo:
+  - para organização não espalhada e registros de comprimento fixo:
     - comprimento de campos, ordem dos campos dentro de um registro;
   - para registros de comprimento variável:
-    - cógigo de tipo de registro, código de tipo de campo, caracteres separadores.
+    - código de tipo de registro, código de tipo de campo, caracteres separadores.
 
 O <ins>cabeçalho do bloco</ins> contém (ver figura abaixo):
 - <ins>Número de entradas</ins> de registro.
