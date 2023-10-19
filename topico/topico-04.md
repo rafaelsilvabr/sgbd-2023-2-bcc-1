@@ -192,7 +192,7 @@ Duas alternativas para a representação de <ins>registros com campos opcionais<
 #### &#x267B;&#x26BE;&#x270D; <ins>CAMPO COM VÁRIOS VALORES EM UM MESMO REGISTRO</ins>
 
 Uma representação para <ins>campo com vários valores em um mesmo registro</ins>:
-- Usar um caractere especial para separar os valores repetidos do campo, e outro caractere especiam para indicar o término do campo:
+- Usar um caractere especial para separar os valores repetidos do campo, e outro caractere especial para indicar o término do campo:
   - ambos os caracteres especiais não deveriam pertencer ao domínio de qualquer dos campos do arquivo.
 
 #### &#x267B;&#x26BE;&#x270D; <ins>ARQUIVO COM REGISTROS DE DIFERENTES TIPOS</ins>
