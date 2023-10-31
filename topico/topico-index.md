@@ -1,3 +1,7 @@
+[Tópico 10](./topico-10.md) - Estruturas de armazenamento (8/N)<br>
+[Tópico 09](./topico-09.md) - Estruturas de armazenamento (7/N)<br>
+[Tópico 08](./topico-08.md) - Estruturas de armazenamento (6/N)<br>
+[Tópico 07](./topico-07.md) - Estruturas de armazenamento (5/N)<br>
 [Tópico 06](./topico-06.md) - Estruturas de armazenamento (4/N)<br>
 [Tópico 05](./topico-05.md) - Estruturas de armazenamento (3/N)<br>
 [Tópico 04](./topico-04.md) - Estruturas de armazenamento (2/N)<br>
