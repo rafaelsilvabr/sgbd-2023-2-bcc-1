@@ -126,7 +126,7 @@ Para lidar com o <ins>_hashing_ externo dinâmico</ins>:<br>
 &#x270D; As estratégias <ins>_hashing_ extensível</ins>, <ins>_hashing_ linear</ins> e <ins>_hashing_ dinâmico</ins>.<br>
 &#x270D; A estrutura de acesso é construída a partir da <ins>representação binária</ins> [do resultado] do cálculo da **função _hash_**:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; uma sequência de bits, denominada **valor _hash_**;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; os registros são distribuídos nos _buckets_, com base nos valores dos bits iniciais do **valor _hash_**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; os registros são distribuídos nos _buckets_, com base nos valores dos bits do **valor _hash_**.
 
 <hr style="border:2px solid blue">
 
