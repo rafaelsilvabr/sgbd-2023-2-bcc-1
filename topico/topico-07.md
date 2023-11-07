@@ -1,4 +1,4 @@
-## [Tópico 07] - Estruturas de armazenamento (5/N)
+## [Tópico 07] - Estruturas de armazenamento (5/10)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>

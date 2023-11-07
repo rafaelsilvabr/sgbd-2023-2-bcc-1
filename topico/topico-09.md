@@ -1,4 +1,4 @@
-## [Tópico 09] - Estruturas de armazenamento (7/N)
+## [Tópico 09] - Estruturas de armazenamento (7/10)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
@@ -11,11 +11,11 @@
 |4. _Buffering_ de blocos|11. Organização de arquivo _vs._ Método de acesso|
 |5. Registro de tamanho fixo|12. Organização de arquivos não ordenados (_heap_)|
 |6. Registro de tamanho variável|13. Organização de arquivos sequenciais (ordenados)|
-|7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. <ins>**ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (1/3)**</ins>|
+|7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. <ins>**ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (1/4)**</ins>|
 
 <hr style="border:2px solid blue">
 
-### 14. <ins>ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (1/3)</ins>
+### 14. <ins>ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (1/4)</ins>
 <br>
 
 <ins>**_HASHING_**</ins> é um <ins>conceito</ins> que está associado à:<br>

@@ -1,4 +1,4 @@
-## [Tópico 04] - Estruturas de armazenamento (2/N)
+## [Tópico 04] - Estruturas de armazenamento (2/10)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>

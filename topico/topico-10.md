@@ -1,4 +1,4 @@
-## [Tópico 10] - Estruturas de armazenamento (8/N)
+## [Tópico 10] - Estruturas de armazenamento (8/10)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
@@ -11,11 +11,11 @@
 |4. _Buffering_ de blocos|11. Organização de arquivo _vs._ Método de acesso|
 |5. Registro de tamanho fixo|12. Organização de arquivos não ordenados (_heap_)|
 |6. Registro de tamanho variável|13. Organização de arquivos sequenciais (ordenados)|
-|7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. <ins>**ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (2/3)**</ins>|
+|7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. <ins>**ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (2/4)**</ins>|
 
 <hr style="border:2px solid blue">
 
-### 14. <ins>ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (2/3)</ins>
+### 14. <ins>ORGANIZAÇÃO DE ARQUIVOS _HASHING_ (2/4)</ins>
 <br>
 
 Para a organização de dados baseada <ins>_hashing_ em memória secundária</ins> - **_HASHING_ EXTERNO** - utiliza-se o <ins>conceito _Bucket_</ins>:
@@ -59,8 +59,9 @@ Se um _bucket_ torna-se <ins>cheio</ins>:
 #### &#x267B;&#x26BE;&#x270D; <ins>OPERAÇÕES EM _HASHING_ EXTERNO</ins>
 
 **BUSCA DE DADOS.**<br>
-&#x267B; Se predicado possui <ins>_campo-hash = <valor>_</ins>, a pesquisa usa a estrutura _hashing_ (é eficiente)<ins>.<br>
-&#x267B; Caso contrário, a pesquisa é similar a arquivos não ordenados.
+&#x267B; Se predicado é <ins>**_campo-hash = \<valor\>_**</ins>, a pesquisa usa a estrutura _hashing_.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; a pesquisa potencialmente será <ins>mais eficente (tempo de execução)</ins> do que as buscas linear e binária.<br>
+&#x267B; Caso contrário, <ins>o método e o custo da pesquisa</ins> são similares a àquelas em arquivos não ordenados.
 
 **EXCLUSÃO DE DADOS.**<br>
 &#x267B; Localizar o _bucket_, conforme descrito acima.<br>
@@ -100,17 +101,19 @@ No <ins>_hashing_ externo **estático**</ins>:
 - O número de _buckets_ é fixo.
 - Tal pode ser <ins>uma séria desvantagem para arquivos dinâmicos</ins>:
   - **M** _buckets_ foram alocados e cada _bucket_ pode ter até **m** registros;
-  - ou seja, o espaço alocado pode ter até o arquivo pode ter **(m * M) registros**.
-- Se o número **r** de registros for muito menor que **m * M**, ou seja, r << (m * M):
+  - ou seja, o espaço alocado pode ter até **(m * M) registros**.
+- Se o número **r** de registros for muito menor que **m * M**, ou seja, **r << (m * M)**:
   - haverá muito espaço [alocado mas] não utilizado.
-- Se o número **r** de registros for maior que **m * M**, ou seja, r >> (m * M):
-  - ocorrerão [muitas] colisões, e a recuperação será lenta devido aos _buckets_ de _overflow_.
+- Se o número **r** de registros for maior que **m * M**, ou seja, **r >> (m * M)**:
+  - haverá muitas colisões, e a recuperação será lenta devido aos _buckets_ de _overflow_.
 - Possível solução:
-  - alterar o número **M** de _buckets_ alocados; e
+  - alterar <ins>dinamicamente</ins> o número **M** de _buckets_ alocados; e
   - usar uma nova **função _hash_** [baseada no novo valor de **M**] para redistribuir registros.
 
 No <ins>_hashing_ externo **estático**</ins>:<br>
-&#x270D; Reorganizações periódicas [e completas] são potencialmente necessárias.<br>
+&#x270D; Reorganizações <ins>periódicas</ins> [de todo o arquivo] são potencialmente necessárias:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; <ins>qual a periodicidade</ins> para as reorganizações?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; a cada reorganização, o valor de **M** poderá ser [manualmente] ajustado.<br>
 &#x270D; Reorganizações podem consumir muito tempo para arquivos grandes.
 
 No <ins>_hashing_ externo **dinâmico**</ins>:<br>
@@ -121,7 +124,7 @@ No <ins>_hashing_ externo **dinâmico**</ins>:<br>
 
 Para lidar com o <ins>_hashing_ externo dinâmico</ins>:<br>
 &#x270D; As estratégias <ins>_hashing_ extensível</ins>, <ins>_hashing_ linear</ins> e <ins>_hashing_ dinâmico</ins>.<br>
-&#x270D; A estrutura de acesso é construída a partir da representação binária do cálculo da **função _hash_**:<br>
+&#x270D; A estrutura de acesso é construída a partir da <ins>representação binária</ins> [do resultado] do cálculo da **função _hash_**:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; uma sequência de bits, denominada **valor _hash_**;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; os registros são distribuídos nos _buckets_, com base nos valores dos bits iniciais do **valor _hash_**.
 

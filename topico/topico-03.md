@@ -1,15 +1,15 @@
-## [Tópico 03] - Estruturas de armazenamento (1/N)
+## [Tópico 03] - Estruturas de armazenamento (1/10)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
 
 |_Item do conteúdo_|_Item do conteúdo_|
 |-|-|
-|1. <ins>**VISÃO GERAL**</ins>|8. Cabeçalho do arquivo|
+|1. <ins>**VISÃO GERAL**</ins>|8. Cabeçalho do arquivo e cabeçalho de bloco|
 |2. <ins>**ARMAZENAMENTO FÍSICO**</ins>|9. Alocação de blocos de arquivo no disco|
 |3. <ins>**ARQUIVO, BLOCO E REGISTRO**</ins>|10. Acesso a registros|
-|4. _Buffering_ de blocos|11. Armazenamento do dicionário de dados|
-|5. Registro de tamanho fixo|12. Organização de arquivos _heap_|
+|4. _Buffering_ de blocos|11. Organização de arquivos _vs._ Método de acesso|
+|5. Registro de tamanho fixo|12. Organização de arquivos não ordenados (_heap_)|
 |6. Registro de tamanho variável|13. Organização de arquivos sequenciais|
 |7. Organização de registros em blocos<br>(espalhada e não espalhada)|14. Organização de arquivos _hashing_|
 
@@ -53,7 +53,7 @@ Contradição para os requisitos de uma memória:
   - criar uma <ins>hierarquia de memória</ins>;
   - "ilusão" para o processador, de forma que a memória pareça grande e rápida o suficiente para não ser <ins>gargalo no sistema</ins>.
 
-#### <ins>HIERARQUIA DE MEMÓRIA</ins>:
+#### &#x267B;&#x26BE;&#x270D; <ins>HIERARQUIA DE MEMÓRIA</ins>:
 - organização em níveis de memória;
 - cada nível contêm uma cópia <ins>das **instruções** (código) e dos **dados**</ins> mais usados em cada instante; 
 - quanto mais "perto" a memória se encontra do processador, mais rápido será o acesso aos dados (<ins>maior o custo</ins> por byte, <ins>menor a capacidade</ins> de armazenamento).
@@ -66,7 +66,7 @@ Nas figuras acima:
 - há várias camadas de _cache_ (L1, L2, L3, etc.), cada com capacidades e velocidades diferentes;
 - a _cache_ busca armazenar cópias dos dados e instruções frequentemente usados, reduzindo o tempo de acesso à memória em comparação com a RAM.
 
-#### PRINCÍPIO DA LOCALIDADE
+#### &#x267B;&#x26BE;&#x270D; <ins>PRINCÍPIO DA LOCALIDADE</ins>:
 
 A hierarquia de memória objetiva que:
 - a grande maioria dos dados/instruções estejam disponíveis nos níveis de memória mais altos (cache, memória principal), e pouquíssimos acessos sejam necessários à memória secundária.
@@ -95,7 +95,7 @@ A maioria dos programas apresenta características de localidade, felizmente:
 - alguns programas apresentam mais, outros programas apresentam menos localidade;
 - um programador experiente sabe explorar a localidade para aumentar o desempenho dos programas.
 
-#### <ins>PARA REFLETIR:
+#### &#x267B;&#x26BE;&#x270D; <ins>PARA REFLETIR:
 
 [ENADE 2005] O grande desejo de todos os desenvolvedores de programas é utilizar quantidades ilimitadas de memória que, por sua vez, sejam extremamente rápidas. Infelizmente, isso não corresponde à realidade, como tenta representar a figura abaixo, que descreve uma hierarquia de memória:
 
@@ -104,7 +104,7 @@ A maioria dos programas apresenta características de localidade, felizmente:
 - para cada elemento, estão indicados os tamanhos típicos disponíveis para armazenamento de informação e o tempo típico de acesso à informação armazenada;
 - registradores do processador e memória cache operam com tempos distintos, o mesmo ocorrendo com a memória principal com relação à memória cache, e com a memória secundária com relação à memória principal.
 
-#### <ins>PARA RESPONDER:<br>Analise as respostas às questões abaixo.</ins>
+#### &#x267B;&#x26BE;&#x270D; <ins>PARA RESPONDER:<br>Analise as respostas às questões abaixo.</ins>
 
 <ins>(Questão 01)</ins> Que características um programa deve ter para que o uso de memória _cache_ seja muito vantajoso?
 - O programa deve ter trechos pequenos que sejam executados várias vezes, e os dados devem estar localizados próximos uns dos outros OU dados e instruções devem ter localidade espacial (próximos uns dos outros) e localidade temporal (serem usados várias vezes em um certo instante de tempo).
@@ -155,7 +155,7 @@ Sempre que uma determinada parte dos dados for necessária:
 - processar os dados;
 - regravar (salvar) os dados na memória secundária, se for o caso.
 
-#### <ins>BLOCO</ins>
+#### &#x267B;&#x26BE;&#x270D; <ins>BLOCO</ins>
 
 A transferência de dados entre níveis da hierarquia de memória ocorre por grupos de bytes (bloco, página):
 - diminuição de custo de transferência;
@@ -170,11 +170,11 @@ Um bloco tipicamente <ins>contém vários registros</ins>:
 - assume-se que nenhum registro é maior que um bloco: é sempre verdade?
 - quais itens de dados podem ser significativamente maiores que um bloco?
 
-#### <ins>ACESSO AO BLOCO</ins>
+#### &#x267B;&#x26BE;&#x270D; <ins>ACESSO AO BLOCO</ins>
 
 Em geral, um único número chamado LBA (endereço de _bloco lógico_), que é um número entre **0** e **n** (assumindo que a capacidade total do disco é de $n+1$ blocos), é mapeado automaticamente para o bloco físico pelo controlador de acesso ao dispositivo.
 
-#### <ins>BUFFER</ins>
+#### &#x267B;&#x26BE;&#x270D; <ins>BUFFER</ins>
 
 Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principal (armazenamento primário) para armazenar um bloco:
 - Para um comando de leitura, o bloco do disco é copiado para o _buffer_;
