@@ -112,7 +112,7 @@ Considere o exemplo abaixo:<br>
             <td><b><i>A1A1A1A1</i></b></td>
             <td>---</td>
             <td><b><i>A1A1A1A1</i></b></td>
-            <td><b><i>{1}</i></b></td>
+            <td><b><i>1</i></b></td>
             <td><b><i>{0}1011....</i></b></td>
             <td><b><i>João da Silva</i></b></td>
        </tr>   
