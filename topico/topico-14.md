@@ -100,12 +100,12 @@ _(i)_ a chave de ordenação do arquivo de dados tem V = 9 bytes de comprimento,
 _(ii)_ um ponteiro de bloco tem P = 6 bytes de comprimento.<br>
 Determine:
 
-(a) O tamanho **R<sub>i</sub>** de cada entrada (registro) no arquivo de índice primário.<br>
-(b) O fator de bloco **bfr<sub>i</sub>** do arquivo de índice primário.<br>
-(c) O número total de entradas (registros) **r<sub>i</sub>** no arquivo de índice primário.<br>
-(d) O número de blocos **b<sub>i</sub>** do arquivo de índice primário.<br>
-(e) O custo **c<sub>i</sub>** da busca binária no arquivo de índice primário.<br>
-(f) O custo **c<sub>dados</sub>** para localizar um registro de dados, via busca binária no arquivo de índice primário.<br>
+(a) O tamanho **R<sub>i</sub>** de cada entrada (registro) no arquivo de índice primário. 9+6=15 bytes<br>
+(b) O fator de bloco **bfr<sub>i</sub>** do arquivo de índice primário. 273 registros por bloco<br>
+(c) O número total de entradas (registros) **r<sub>i</sub>** no arquivo de índice primário. 7500 registros<br>
+(d) O número de blocos **b<sub>i</sub>** do arquivo de índice primário. 7500/273 = 28 blocos<br>
+(e) O custo **c<sub>i</sub>** da busca binária no arquivo de índice primário. log<sub>2</sub> 28 = 5 blocos <br>
+(f) O custo **c<sub>dados</sub>** para localizar um registro de dados, via busca binária no arquivo de índice primário. 5 + 1 = 6  blocos<br>
 (g) Quantos bytes ocuparia a estrutura completa de índice primário? É possível ter essa estrutura em memória? 
 
 [Uma solução](./topico-14solucao-02.md)
