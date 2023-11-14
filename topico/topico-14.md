@@ -89,9 +89,9 @@ Sobre as operações de atualização (inserção, modificação e exclusão) de
 
 **1a. Questão)** Suponha que um arquivo ordenado possui r = 300.000 registros, que estão gravados em um disco com bloco de tamanho B = 4096 bytes. Os registros são de tamanho fixo R = 100 bytes, e a organização de registros em blocos é não espalhada. Determine:
 
-(a) O fator de bloco **bfr** do arquivo.<br>
-(b) O número mínimo de blocos **b** do arquivo.<br>
-(c) O custo **c** da busca binária no arquivo.
+(a) O fator de bloco **bfr** do arquivo. 40 registros por bloco<br>
+(b) O número mínimo de blocos **b** do arquivo. 7500 blocos<br>
+(c) O custo **c** da busca binária no arquivo log<sub>2</sub> 7500 = 13 blocos.
 
 [Uma solução](./topico-14solucao-01.md)
 
