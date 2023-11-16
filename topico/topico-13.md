@@ -66,7 +66,7 @@ O acesso aos dados via o arquivo de índice requer que páginas do arquivo de í
 
 **ÍNDICE DENSO _vs._ ÍNDICE ESPARSO.**<br>
 &#x270D; Em [arquivos de] <ins>índices densos</ins>, há uma entrada [de índice] para cada valor [do campo de pesquisa] no arquivo de dados (figura abaixo à esq.).<br>
-&#x270D; Em <ins>índices esparsos</ins>, há uma entrada [de índice] apenas para alguns dos valores [do campo de pesquisa] no [arquivos de] arquivo de dados (figura abaixo à dir.).<br>
+&#x270D; Em <ins>índices esparsos</ins>, há uma entrada [de índice] apenas para alguns dos valores [do campo de pesquisa] no arquivo de dados (figura abaixo à dir.).<br>
 &#x270D; Por definição, arquivos de índice denso possuem maior número de registros em relação a arquivos de índice esparso:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; ... então a busca via um índice esparso é mais rápida do que via um índice denso [para o mesmo arquivo de dados]?
 
