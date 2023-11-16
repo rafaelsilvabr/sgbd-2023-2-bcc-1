@@ -1,4 +1,4 @@
-## [Tópico 14] - Estruturas de indexação (2/5)
+## [Tópico 14] - Estruturas de indexação (2/)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
@@ -89,9 +89,9 @@ Sobre as operações de atualização (inserção, modificação e exclusão) de
 
 **1a. Questão)** Suponha que um arquivo ordenado possui r = 300.000 registros, que estão gravados em um disco com bloco de tamanho B = 4096 bytes. Os registros são de tamanho fixo R = 100 bytes, e a organização de registros em blocos é não espalhada. Determine:
 
-(a) O fator de bloco **bfr** do arquivo. 40 registros por bloco<br>
-(b) O número mínimo de blocos **b** do arquivo. 7500 blocos<br>
-(c) O custo **c** da busca binária no arquivo log<sub>2</sub> 7500 = 13 blocos.
+(a) O fator de bloco **bfr** do arquivo.<br>
+(b) O número mínimo de blocos **b** do arquivo.<br>
+(c) O custo **c** da busca binária no arquivo.
 
 [Uma solução](./topico-14solucao-01.md)
 
@@ -100,12 +100,12 @@ _(i)_ a chave de ordenação do arquivo de dados tem V = 9 bytes de comprimento,
 _(ii)_ um ponteiro de bloco tem P = 6 bytes de comprimento.<br>
 Determine:
 
-(a) O tamanho **R<sub>i</sub>** de cada entrada (registro) no arquivo de índice primário. 9+6=15 bytes<br>
-(b) O fator de bloco **bfr<sub>i</sub>** do arquivo de índice primário. 273 registros por bloco<br>
-(c) O número total de entradas (registros) **r<sub>i</sub>** no arquivo de índice primário. 7500 registros<br>
-(d) O número de blocos **b<sub>i</sub>** do arquivo de índice primário. 7500/273 = 28 blocos<br>
-(e) O custo **c<sub>i</sub>** da busca binária no arquivo de índice primário. log<sub>2</sub> 28 = 5 blocos <br>
-(f) O custo **c<sub>dados</sub>** para localizar um registro de dados, via busca binária no arquivo de índice primário. 5 + 1 = 6  blocos<br>
+(a) O tamanho **R<sub>i</sub>** de cada entrada (registro) no arquivo de índice primário.<br>
+(b) O fator de bloco **bfr<sub>i</sub>** do arquivo de índice primário.<br>
+(c) O número total de entradas (registros) **r<sub>i</sub>** no arquivo de índice primário.<br>
+(d) O número de blocos **b<sub>i</sub>** do arquivo de índice primário.<br>
+(e) O custo **c<sub>i</sub>** da busca binária no arquivo de índice primário.<br>
+(f) O custo **c<sub>dados</sub>** para localizar um registro de dados, via busca binária no arquivo de índice primário.<br>
 (g) Quantos bytes ocuparia a estrutura completa de índice primário? É possível ter essa estrutura em memória? 
 
 [Uma solução](./topico-14solucao-02.md)
