@@ -18,5 +18,5 @@ UMA SOLUÇÃO:
 (d) b<sub>i</sub> = ⎡(r<sub>i</sub>/bfr<sub>i</sub>)⎤ = ⎡(1000/372)⎤ = 3 blocos.<br>
 (e) c<sub>i</sub> =  ⎡(log<sub>2</sub> b<sub>i</sub>)⎤ = ⎡(log<sub>2</sub> 3)⎤ = 2 blocos acessados.<br>
 (f) Visto que há, em média, 300 registros por CEP, os registros com mesmo CEP podem estar dispersos em vários blocos de dados.<br>
-No pior caso, c<sub>dados</sub> = c<sub>i</sub> + ⎣(B/R)⎦ + 1, onde R é o tamanho do registro de dados.<br>
+No pior caso, c<sub>dados</sub> = c<sub>i</sub> +  ⎡(300 / ⎣(B/R)⎦ )⎤ + 1, onde R é o tamanho do registro de dados.<br>
 (g) O arquivo de índice de agrupamento possui 3 blocos, então tais blocos ocupam 3 * 4 KBytes, ou seja, 12 KBytes.
