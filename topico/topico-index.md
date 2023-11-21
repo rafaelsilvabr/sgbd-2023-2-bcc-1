@@ -1,3 +1,4 @@
+[Tópico 17](./topico-17.md) - Estruturas de indexação (4/5)<br>
 [Tópico 16](./topico-16.md) - Estruturas de indexação (4/5)<br>
 [Tópico 15](./topico-15.md) - Estruturas de indexação (3/5)<br>
 [Tópico 14](./topico-14.md) - Estruturas de indexação (2/5)<br>
