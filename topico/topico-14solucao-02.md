@@ -19,6 +19,4 @@ UMA SOLUÇÃO:
 (d) **b<sub>i</sub>** = ⎡(r<sub>i</sub>/bfr<sub>i</sub>)⎤ = ⎡(7500/273)⎤ = 28 blocos.<br>
 (e) **c<sub>i</sub>** = ⎡(log<sub>2</sub> b<sub>i</sub>)⎤ = ⎡(log<sub>2</sub> 28)⎤ = 5 blocos acessados.<br>
 (f) **c<sub>dados</sub>** = c<sub>i</sub> + 1 = 5 + 1 = 6 blocos acessados.<br>
-(g) 7500 entradas de 15 bytes cada = 112500 bytes (112,5 Kbytes). We would typically be kept in main memory thus requiring negligible time to search with binary search. In that 
-case we simply make one block access to retrieve the record.
-
+(g) O arquivo de índice de primário possui 28 blocos, então tais blocos ocupam 28 * 4 KBytes, ou seja, 112 KBytes.
