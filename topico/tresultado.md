@@ -16,3 +16,9 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 2. Aplicar uma marcação lógica para os registros excluídos. Ter uma lista de registros excluídos.<br>
 3. É necessário conhecer os endereços dos blocos do arquivo. O desempenho é melhor que busca linear.<br>
 4. O bucket A1A1A1A1 estiver cheio. d = d', para o bucket A1A1A1A1.
+
+#### Avaliação em 16/11/2023
+
+1a. bfr = ⎣(B/R)⎦ = ⎣(4096/100)⎦ = 40 registros por bloco.<br>
+1b. b = ⎡(r/bfr)⎤ = ⎡(300000/40)⎤ = 7500 blocos.<br>
+1c. c = ⎡log<sub>2</sub> b⎤= ⎡(log<sub>2</sub> 7500)⎤ = 13 blocos.
