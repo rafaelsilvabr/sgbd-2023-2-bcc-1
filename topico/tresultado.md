@@ -27,3 +27,6 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 2(c). r<sub>i</sub> = 7500 registros (mesmo número de blocos no arquivo de dados).<br>
 2(d). b<sub>i</sub> = ⎡(r<sub>i</sub>/bfr<sub>i</sub>)⎤ = ⎡(7500/273)⎤ = 28 blocos.<br>
 2(e). c<sub>i</sub> = ⎡(log<sub>2</sub> b<sub>i</sub>)⎤ = ⎡(log<sub>2</sub> 28)⎤ = 5 blocos acessados.<br>
+2(d). c<sub>dados</sub> = c<sub>i</sub> + 1 = 5 + 1 = 6 blocos acessados.<br>
+
+
