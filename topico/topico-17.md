@@ -34,7 +34,7 @@ Opções de implementação:
 
 &#9745;&#9745; **<ins>OPÇÃO 3:<ins>** ... Nível extra de indireção ... Alternativa mais usual ...<br>
 &#9888; Há uma [único] registro no arquivo de índice para cada valor [distinto] do campo de indexação, e esse registro possui um ponteiro para ...<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... um bloco que tem ponteiros para cada dos registros que têm esse valor do campo de indexação ...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... um bloco que tem ponteiros para cada um dos registros que têm esse valor do campo de indexação ...<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ver figura abaixo.<br>
 &#9888; O <ins>nível extra de indireção</ins> (coluna central de blocos na figura) possui blocos com ponteiros de registro.<br>
 &#9888; A recuperação através do índice requer um [ou mais] (por que mais de um?) acessos de bloco adicionais devido ao nível extra.<br>
