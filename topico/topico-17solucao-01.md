@@ -23,4 +23,4 @@ UMA SOLUÇÃO:
 (f) n<sub>ind</sub> = P<sub>r</sub> * r<sub>k</sub> = 7 * 30 = 210 bytes.<br>
 (g) b<sub>ind</sub> = 1000 * ⎡(n<sub>ind</sub> / B)⎤ = 1000 * ⎡(210 / 512)⎤ = 1000 blocos.<br>
 (h) b<sub>i</sub> + b<sub>ind</sub> = 30 + 1000 = 1030 blocos.<br>
-(i) c<sub>i</sub> = ⎡(log<sub>2</sub> b<sub>i)</sub>⎤ + 1 + 300 = ⎡(log<sub>2</sub> 30)⎤ + 1 + 300 = 306 blocos.
+(i) c<sub>i</sub> = ⎡(log<sub>2</sub> b<sub>i)</sub>⎤ + 1 + 30 = ⎡(log<sub>2</sub> 30)⎤ + 1 + 30 = 36 blocos.
