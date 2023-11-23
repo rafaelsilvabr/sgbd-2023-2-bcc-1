@@ -51,7 +51,7 @@ Opções de implementação:
 
 #### Exercício
 
-Seja um arquivo não ordenado com r = 30.000 registros, que estão gravados em um disco com bloco de tamanho B = 512 bytes. Suponha um índice secundário, cuja chave de ordenação é o campo CEP (campo não-chave), onde sua implementação emprega um nível extra de indireção para armazenar ponteiros de registro (Opção 3). Suponha, também, que existam 1.000 valores distintos de CEP e que os registros do arquivo estejam distribuídos uniformemente entre esses valores. Sobre o índice secundário:<br>
+Seja um arquivo não ordenado com r = 30.000 registros, que estão gravados em um disco com bloco de tamanho B = 512 bytes. Suponha um índice secundário, cuja chave de indexação é o campo CEP (campo não-chave), onde sua implementação emprega um nível extra de indireção para armazenar ponteiros de registro (Opção 3). Suponha, também, que existam 1.000 valores distintos de CEP e que os registros do arquivo estejam distribuídos uniformemente entre esses valores. Sobre o índice secundário:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(i)_ a <ins>campo de indexação</ins> **CEP** tem 9 bytes de comprimento, e<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(ii)_ o ponteiro de bloco **P<sub>b</sub>** ocupa 6 bytes, ponteiro de registro **P<sub>r</sub>** ocupa 7 bytes.
 
