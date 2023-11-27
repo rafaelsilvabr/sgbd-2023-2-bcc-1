@@ -91,7 +91,7 @@ Os registros podem ser <ins>movimentados dentro de uma página</ins> para mantê
 
 Qualquer <ins>ponteiro externo ao bloco</ins>:
 - <ins>Não deve apontar diretamente</ins> para qualquer dos registros no bloco.
-- <ins>Deve apontar para o cabeçalho do bloco</ins>, que contém a possição de cada registro no bloco. 
+- <ins>Deve apontar para o cabeçalho do bloco</ins>, que contém a posição de cada registro no bloco. 
 
 <img src="../media/arquivo-06.jpg" width="600">
 
