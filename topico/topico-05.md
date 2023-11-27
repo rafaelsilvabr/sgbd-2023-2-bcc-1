@@ -58,7 +58,7 @@ A <ins>organização espalhada</ins> busca evitar o desperdício de espaço em c
 
 Para arquivos com <ins>registros de tamanho variável</ins>:
 - Pode ser usada uma organização espalhada ou não espalhada.
-  - se o tamanho médio do registro médio for grande, é vantajoso usar a organização espalhada, para reduzir o espaço perdido em cada bloco.
+  - se o tamanho médio do registro for grande, é vantajoso usar a organização espalhada, para reduzir o espaço perdido em cada bloco.
 - Cada bloco pode armazenar um <ins>número diferente de registros</ins>.
 - O <ins>fator de bloco</ins> (bfr) é o <ins>número médio de registros</ins> por bloco do arquivo.
 - O <ins>número de blocos</ins> **b** necessários para ter um arquivo com **r** registros:
