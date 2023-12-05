@@ -33,5 +33,7 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 
 1. Sobre o acesso à memória: Se os registradores do processador e a memória cache têm o mesmo tempo de acesso, ainda assim seria vantajoso utilizar cache, porque o seu objetivo é justamente fornecer dados e instruções na velocidade do processador. Se a memória principal e a memória cache operassem com os mesmos tempos, não haveria mais razão para se usar a memória cache.
 1. Ainda sobre o acesso à memória: A cache busca armazenar cópias dos dados e instruções frequentemente usados, reduzindo o tempo de acesso à memória em comparação com a RAM. Um buffer é uma área reservada contígua na memória principal (armazenamento primário), usualmente para armazenar um bloco.
-
+1. A transferência de dados por grupos de bytes (bloco/página): Promove a diminuição de custo de transferência.
+1. Seja uma matriz N x N ....: O princípio da localidade espacial.
+1. 
 
