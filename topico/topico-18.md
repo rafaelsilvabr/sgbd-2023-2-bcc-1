@@ -64,7 +64,7 @@ O número de registros do <ins>índice de nível j </ins> (j>1) é o número de 
 
 <hr style="border:2px solid blue">
 
-#### Exercício
+#### Exercício 01
 
 Seja o índice secundário do exercício presente no [Tópico 16](./topico-16.md), conforme os dados abaixo:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fator de bloco do índice &#8213; bfr<sub>i</sub> = 273 entradas (registros) por bloco<br>
@@ -78,3 +78,24 @@ Se o índice secundário for convertido para um índice multinível (o índice s
 (e) Compare com o custo de acesso ao registro de dados via o índice de único nível.
 
 [Uma solução](./topico-18solucao-01.md)
+
+#### Exercício 02
+
+Seja um arquivo não ordenado com r = 3.000.000 registros, que estão gravados em um disco com bloco de tamanho B = 4 KBytes. Suponha um índice secundário, cujo campo de indexação é o campo CEP (campo não-chave), onde sua implementação emprega um nível extra de indireção para armazenar ponteiros de registro – os blocos no nível extra de indireção definem uma lista encadeada de blocos, para cada valor distinto do campo de indexação. Suponha, também, que existam 10.000 valores distintos de CEP e que os registros do arquivo estejam distribuídos uniformemente entre esses valores.<br>
+Sobre o índice secundário:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) o campo de indexação CEP tem 9 bytes de comprimento, e<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) o ponteiro de bloco Pb ocupa 6 bytes, ponteiro de registro Pr ocupa 7 bytes.
+
+Seja uma busca por registros existentes no arquivo de dados, cujo predicado é CEP = <valor>. Determine:<br>
+(a) O tamanho de registro Ri do [arquivo de] índice secundário.<br>
+(b) O fator de bloco bfri do índice secundário.<br>
+(c) O número de registros ri do índice secundário.<br>
+(d) O número de blocos bi do índice secundário.<br>
+(e) O número médio de registros rk para cada valor do campo de indexação do índice secundário.<br>
+(f) O número de ponteiros de registro possível (número máximo) em cada bloco do nível de indireção.<br>
+(g) O número de blocos bind no nível de indireção do índice secundário.<br>
+(h) Se o índice for um índice multinível:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h-1) O número de níveis do índice.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h-2) O número de blocos no nível 2, nível 3, ...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h-3) O número total de blocos de toda a estrutura do índice.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h-4) O custo da pesquisa via a estrutura do índice multinível (pior caso).<br>

@@ -1,3 +1,8 @@
+[Tópico 19](./topico-19.md) - Estruturas de indexação (2/5)<br>
+[Tópico 18](./topico-18.md) - Estruturas de indexação (2/5)<br>
+[Tópico 17](./topico-17.md) - Estruturas de indexação (2/5)<br>
+[Tópico 16](./topico-16.md) - Estruturas de indexação (2/5)<br>
+[Tópico 15](./topico-15.md) - Estruturas de indexação (2/5)<br>
 [Tópico 14](./topico-14.md) - Estruturas de indexação (2/5)<br>
 [Tópico 13](./topico-13.md) - Estruturas de indexação (1/5)<br>
 [Tópico 12](./topico-12.md) - Estruturas de armazenamento (10/10) - Organização de arquivos _hashing_ (4/4)<br>
