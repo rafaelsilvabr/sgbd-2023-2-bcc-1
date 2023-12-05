@@ -1,4 +1,4 @@
-## [Tópico 18] - Estruturas de indexação (5/)
+## [Tópico 18] - Estruturas de indexação (6/)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
@@ -7,7 +7,7 @@
 |-|-|
 |1. Visão geral|4. Índice secundário|
 |2. Índice primário|5. <ins>**ÍNDICE MULTINÍVEL**</ins>|
-|3. Índice de agrupamento|6. |
+|3. Índice de agrupamento|6. Índice em árvore|
 
 <hr style="border:2px solid blue">
 
