@@ -40,5 +40,6 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 1. Quando uma determinada página é solicitada ... : Escolhe uma página para substituição, usando uma política de substituição de buffer.
 1. Continuando a questão anterior ... : Copia a página solicitada no buffer liberado da página para substituição.
 1. Seja um bloco em memória (página) ... : Clock policy. LRU.
+1. Em registros de tamanho variável ... : Ponteiros externos ao bloco não devem apontar fisicamente para qualquer dos registros no bloco. Algumas operações sobre os registros podem ocasionar a movimentação interna de registros na página, para evitar a fragmentação de espaço não utilizado.
 1. 
 
