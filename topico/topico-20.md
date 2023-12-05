@@ -13,7 +13,7 @@
 
 ### 6. <ins>ÍNDICE EM ÁRVORE (2/3)</ins>
 
-**`Árvores de Busca`** impõem retrições às estruturas tradicionais em árvore, tal como explanado no [Tópico 19](./topico-19.md):<br>
+**`Árvores de Busca`** impõem restrições às estruturas tradicionais em árvore, tal como posto no [Tópico 19](./topico-19.md):<br>
 &#10004; Por exemplo, ver a estrutura interna de cada nó da árvore de busca.
 
 Contudo, <ins>novas restrições são necessárias</ins> para lidar com os desafios apresentados no [Tópico 19](./topico-19.md), a saber:<br>
