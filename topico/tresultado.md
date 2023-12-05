@@ -39,6 +39,6 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 1. O gerenciamento de buffer busca: nenhum.
 1. Quando uma determinada página é solicitada ... : Escolhe uma página para substituição, usando uma política de substituição de buffer.
 1. Continuando a questão anterior ... : Copia a página solicitada no buffer liberado da página para substituição.
-1. 
+1. Seja um bloco em memória (página) ... : Clock policy. LRU.
 1. 
 
