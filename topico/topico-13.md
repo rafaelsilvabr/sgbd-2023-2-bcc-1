@@ -1,4 +1,4 @@
-## [Tópico 13] - Estruturas de indexação (1/5)
+## [Tópico 13] - Estruturas de indexação (1/9)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
@@ -6,8 +6,8 @@
 |_Item do conteúdo_|_Item do conteúdo_|
 |-|-|
 |1. <ins>**VISÃO GERAL**</ins>|4. Índice secundário|
-|2. Índice primário|5. |
-|3. Índice de agrupamento|6. |
+|2. Índice primário|5. Índice multinível|
+|3. Índice de agrupamento|6. Índice em árvore|
 
 <hr style="border:2px solid blue">
 
@@ -66,7 +66,7 @@ O acesso aos dados via o arquivo de índice requer que páginas do arquivo de í
 
 **ÍNDICE DENSO _vs._ ÍNDICE ESPARSO.**<br>
 &#x270D; Em [arquivos de] <ins>índices densos</ins>, há uma entrada [de índice] para cada valor [do campo de pesquisa] no arquivo de dados (figura abaixo à esq.).<br>
-&#x270D; Em <ins>índices esparsos</ins>, há uma entrada [de índice] apenas para alguns dos valores [do campo de pesquisa] no arquivo de dados (figura abaixo à dir.).<br>
+&#x270D; Em <ins>índices esparsos</ins>, há uma entrada [de índice] apenas para alguns dos valores [do campo de pesquisa] no [arquivos de] arquivo de dados (figura abaixo à dir.).<br>
 &#x270D; Por definição, arquivos de índice denso possuem maior número de registros em relação a arquivos de índice esparso:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; ... então a busca via um índice esparso é mais rápida do que via um índice denso [para o mesmo arquivo de dados]?
 

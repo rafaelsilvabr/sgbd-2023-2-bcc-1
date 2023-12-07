@@ -1,4 +1,4 @@
-**1a. Questão)** Suponha que um arquivo ordenado possui r = 300.000 registros, que estão gravados em um disco com bloco de tamanho B = 4096 bytes. O arquivo está ordenado pelo campo CEP (Código de Endereçamento Postal), e há cerca 1000 CEPs distintos nos registros do arquivo (média de 300 registros por CEP, assumindo distribuição uniforme entre CEPs). Suponha que há um índice de agrupamento:<br>
+[**1a. Questão)** Suponha que um arquivo ordenado possui r = 300.000 registros, que estão gravados em um disco com bloco de tamanho B = 4096 bytes. O arquivo está ordenado pelo campo CEP (Código de Endereçamento Postal), e há cerca 1000 CEPs distintos nos registros do arquivo (média de 300 registros por CEP, assumindo distribuição uniforme entre CEPs). Suponha que há um índice de agrupamento:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(i)_ a chave de ordenação do arquivo de dados tem V = 5 bytes de comprimento, e<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(ii)_ um ponteiro de bloco tem P = 6 bytes de comprimento.<br>
 Determine:<br>
@@ -20,3 +20,4 @@ UMA SOLUÇÃO:
 (f) Visto que há, em média, 300 registros por CEP, os registros com mesmo CEP podem estar dispersos em vários blocos de dados.<br>
 No pior caso, c<sub>dados</sub> = c<sub>i</sub> +  ⎡(300 / ⎣(B/R)⎦ )⎤ + 1, onde R é o tamanho do registro de dados.<br>
 (g) O arquivo de índice de agrupamento possui 3 blocos, então tais blocos ocupam 3 * 4 KBytes, ou seja, 12 KBytes.
+](https://github.com/plinioleitao/sgbd-2023-2-bcc/edit/main/topico/topico-15solucao-01.md)https://github.com/plinioleitao/sgbd-2023-2-bcc/edit/main/topico/topico-15solucao-01.md

@@ -1,4 +1,4 @@
-## [Tópico 19] - Estruturas de indexação (7/)
+## [Tópico 19] - Estruturas de indexação (7/9)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>

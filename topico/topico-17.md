@@ -1,4 +1,4 @@
-## [Tópico 17] - Estruturas de indexação (5/)
+## [Tópico 17] - Estruturas de indexação (5/9)
 ###### *by Prof. Plinio Sa Leitao-Junior (INF/UFG)*
 
 ### <ins>CONTEÚDO</ins>
