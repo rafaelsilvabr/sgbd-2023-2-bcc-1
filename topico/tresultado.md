@@ -41,5 +41,6 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 1. Continuando a questão anterior ... : Copia a página solicitada no buffer liberado da página para substituição.
 1. Seja um bloco em memória (página) ... : Clock policy. LRU.
 1. Em registros de tamanho variável ... : Ponteiros externos ao bloco não devem apontar fisicamente para qualquer dos registros no bloco. Algumas operações sobre os registros podem ocasionar a movimentação interna de registros na página, para evitar a fragmentação de espaço não utilizado.
-1. 
+1. Sobre organização de arquivos e método de acesso: _nenhum_. 
+1. Em arquivos do tipo _heap_, estudamos ... : Mover vários registros do arquivo. Mover um único registro do arquivo.   
 
