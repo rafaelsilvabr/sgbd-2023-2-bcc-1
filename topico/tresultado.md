@@ -43,4 +43,16 @@ Clique [AQUI](../media/sgbd-2023-2-bcc-resumo.pdf) para ver as notas.
 1. Em registros de tamanho variável ... : Ponteiros externos ao bloco não devem apontar fisicamente para qualquer dos registros no bloco. Algumas operações sobre os registros podem ocasionar a movimentação interna de registros na página, para evitar a fragmentação de espaço não utilizado.
 1. Sobre organização de arquivos e método de acesso: _nenhum_. 
 1. Em arquivos do tipo _heap_, estudamos ... : Mover vários registros do arquivo. Mover um único registro do arquivo.   
+1. Baseado nos passos abaixo, determine ... : Checa se os dados estão em memória principal. Checa se os dados estão em memória principal. Copia os dados da memória secundária para a memória principal. Processa os dados. Regrava (salva) os dados na memória secundária, se for o caso.
+1. Considere os seguintes tipos de índice ...<br>
+O campo de indexação é o campo de ordenação. (primário, agrupamento)<br>
+O campo de indexação é um campo chave. (primário, secundário)<br>
+O campo de indexação é um campo não-chave. (agrupamento, secundário)<br>
+Vários índices desse tipo podem ser criados para um mesmo arquivo de dados, mesmo que seus campos de indexação sejam distintos entre si. (secundário)<br>
+O índice é esparso. (primário, agrupamento, secundário)<br>
+O índice é denso. (secundário)<br>
+A busca binária pode ser aplicada na pesquisa via o índice. (primário, agrupamento, secundário)<br>
+O arquivo de índice é um arquivo ordenado ou não ordenado. ()<br>
+Pode ser transformado em índice multinível. (primário, agrupamento, secundário)
+
 
