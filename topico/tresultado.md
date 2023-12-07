@@ -64,5 +64,5 @@ Pode ser transformado em índice multinível. (primário, agrupamento, secundár
 
 #### Avaliação em 07/12/2023
 
-a. Ri = 10 + 6 = 16 bytes.
-a. bfri = piso(B / R) = piso(1024 / 16) = piso(64) = 64 registros por bloco.
+1. R<sub>i</sub> = 10 + 6 = 16 bytes.
+2. bfr<sub>i</sub> = piso(B / R) = piso(1024 / 16) = piso(64) = 64 registros por bloco.
