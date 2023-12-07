@@ -54,5 +54,13 @@ O índice é denso. (secundário)<br>
 A busca binária pode ser aplicada na pesquisa via o índice. (primário, agrupamento, secundário)<br>
 O arquivo de índice é um arquivo ordenado ou não ordenado. ()<br>
 Pode ser transformado em índice multinível. (primário, agrupamento, secundário)
+1. 
+
+|n|M (qtde. inicial de buckets)|Valor da chave|h0 ou  h1 ?|Valor da função hash|
+|-|-|-|-|-|
+|4|7|122|h1|10|
+|2|7|11|h0|4|
+|3|13|19|h0|6|
+|2|13|37|h0|11|
 
 
