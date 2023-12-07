@@ -31,7 +31,7 @@ A **`Árvore B`** possui restrições adicionais às árvores de busca, visando 
 
 &#9752;&#9752; Seja uma **`ÁRVORE B DE ORDEM p`**:
 
-&#9918; Cada **<ins>NÓ INTERNO</ins>** possui a **`ESTRUTURA`**:
+&#9918; Cada **<ins>NÓ (INTERNO e FOLHA)</ins>** possui a **`ESTRUTURA`**:
 
 |P|Dados|P|Dados| ... | ... |P|Dados|P|
 |-|-|-|-|-|-|-|-|-|
