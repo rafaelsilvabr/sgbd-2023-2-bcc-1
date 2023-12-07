@@ -73,4 +73,4 @@ Pode ser transformado em índice multinível. (primário, agrupamento, secundár
 1. b<sub>ind</sub> = 1000 * teto (3000/145) = 1000 * teto(20,69) = 21000 blocos.
 1. b<sub>total</sub> = b<sub>i</sub> + b<sub>ind</sub> = 16 + 21000 = 21016 blocos.
 1. <ins>**NÍVEL 2:**</ins><br>r<sub>i2</sub> = b<sub>i</sub> = 16 registros.<br>b<sub>i2</sub> = teto(r<sub>i2</sub> / bfr<sub>i</sub>) = teto(16 / 64) = 1 bloco.<br>Resposta: 02 níveis.
-1. resposta = 1 + b<sub>total</sub> = 1 + 21016 = 21017 blocos.
+1. Resposta = 1 + b<sub>total</sub> = 1 + 21016 = 21017 blocos.
