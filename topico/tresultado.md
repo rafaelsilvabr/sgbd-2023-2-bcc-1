@@ -65,4 +65,9 @@ Pode ser transformado em índice multinível. (primário, agrupamento, secundár
 #### Avaliação em 07/12/2023
 
 1. R<sub>i</sub> = 10 + 6 = 16 bytes.
-2. bfr<sub>i</sub> = piso(B / R) = piso(1024 / 16) = piso(64) = 64 registros por bloco.
+1. bfr<sub>i</sub> = piso(B / R) = piso(1024 / 16) = piso(64) = 64 registros por bloco.
+1. r<sub>i</sub> = 1.000 registros (1.000 CEPs distintos).
+1. b<sub>i</sub> = teto(r<sub>i</sub> / bfr<sub>i</sub>) = teto(1000 / 64) = teto(15,63) = 16 blocos.
+1. r<sub>k</sub> = teto(3000000 / 1000) = teto(3000) = 3000 registros por CEP.
+1. x.P<sub>R</sub> + 1.P<sub>B</sub> ≤ 1024 &#8756; 7x + 6 ≤ 1024 &#8756; x ≤ 145,43<br>resposta = 145 PR por bloco.
+1. 
