@@ -69,5 +69,8 @@ Pode ser transformado em índice multinível. (primário, agrupamento, secundár
 1. r<sub>i</sub> = 1.000 registros (1.000 CEPs distintos).
 1. b<sub>i</sub> = teto(r<sub>i</sub> / bfr<sub>i</sub>) = teto(1000 / 64) = teto(15,63) = 16 blocos.
 1. r<sub>k</sub> = teto(3000000 / 1000) = teto(3000) = 3000 registros por CEP.
-1. x.P<sub>R</sub> + 1.P<sub>B</sub> ≤ 1024 &#8756; 7x + 6 ≤ 1024 &#8756; x ≤ 145,43<br>resposta = 145 PR por bloco.
-1. 
+1. x.P<sub>R</sub> + 1.P<sub>B</sub> ≤ 1024 &#8756; 7x + 6 ≤ 1024 &#8756; x ≤ 145,43<br>resposta = 145 ponteiros de registro em cada bloco do nível de indireção.
+1. b<sub>ind</sub> = 1000 * teto (3000/145) = 1000 * teto(20,69) = 21000 blocos.
+1. b<sub>total</sub> = b<sub>i</sub> + b<sub>ind</sub> = 16 + 21000 = 21016 blocos.
+1. <ins>**NÍVEL 2:**</ins><br>r<sub>i2</sub> = bi = 16 registros.<br>b<sub>i2</sub> = teto(r<sub>i2</sub> / bfr<sub>i</sub>) = teto(16 / 64) = 1 bloco.<br>Resposta: 02 níveis.
+1. resposta = 1 + b<sub>total<sub> = 1 + 21016 = 21017 blocos.
