@@ -166,7 +166,7 @@ Determine:
 
 (a) A </ins>ordem **p**</ins> da árvore.<br>
 (b) O <ins>número de entradas</ins> e <ins>número de ponteiros de árvore</ins> em cada nó, em média, segundo a suposição **69% cheio** para os nós da árvore.<br>
-(c) O número entradas na árvore em cada nível, até o nível 4.
+(c) O número total de entradas na árvore até o nível 3.
 
 [Uma solução](./topico-20solucao-01.md)
 
@@ -177,5 +177,3 @@ Determine:
 &#9745; Registros completos [de dados] são armazenados nos nós da árvore B, em vez de apenas <chave de pesquisa, ponteiro de dados>:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658; Contexto: arquivos com número relativamente pequeno de registros e registros de tamanho reduzido,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... para evitar número de níveis elevado, o que impactaria ter acesso eficiente.
-
-&#9752;&#x270D;&#9745;&#9888;
