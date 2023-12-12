@@ -18,7 +18,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... cada valor do campo de indexação (campo de pesquisa) aparece uma única vez na árvore, em algum nível da árvore,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ponteiros de dados estão dispersos em todos os nós da árvore.<br>
 &#10004; **`Árvore B+`:**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... os nós folha possuem uma entrada para cada valor do campo de indexação (campo de pesquisa),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... os nós folhas possuem uma entrada para cada valor do campo de indexação (campo de pesquisa),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ponteiros de dados são armazenados apenas nos nós folhas da árvore.<br>
 &#10004; Em ambas as árvores (`B e B+`):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... se o campo de indexação (campo de pesquisa) for campo não-chave,<br>
