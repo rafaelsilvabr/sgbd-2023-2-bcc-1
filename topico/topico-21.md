@@ -16,9 +16,9 @@
 &#x270D;&#x270D; Implementações de um <ins>índice multinível dinâmico</ins>:<br>
 &#10004; **`Árvore B`**:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... cada valor do campo de indexação (campo de pesquisa) aparece uma única vez na árvore, em algum nível da árvore,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ponteiros de dados estão dispersos em todos os nós da árvore.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ponteiros de dados estão dispersos em em todos os nós da árvore.<br>
 &#10004; **`Árvore B+`:**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... os nós folhas possuem uma entrada para cada valor do campo de indexação (campo de pesquisa),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... os nós folha possuem uma entrada para cada valor do campo de indexação (campo de pesquisa),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... ponteiros de dados são armazenados apenas nos nós folhas da árvore.<br>
 &#10004; Em ambas as árvores (`B e B+`):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... se o campo de indexação (campo de pesquisa) for campo não-chave,<br>
@@ -44,8 +44,8 @@
 
 |Cenário|Restrição|
 |-|-|
-|i = 1|X < K<sub>i</sub>|
-|1 < i < q|K<sub>i−1</sub> < X < K<sub>i</sub>|
+|i = 1|X ≤ K<sub>i</sub>|
+|1 < i < q|K<sub>i−1</sub> < X ≤ K<sub>i</sub>|
 |i = q|K<sub>i−1</sub> < X|
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... para i = 1: X < K<sub>i</sub><br>
@@ -113,10 +113,10 @@ Sejam: o tamanho do bloco B = 512 bytes, o tamanho do campo de indexação (camp
 
 Assuma que, em média, cada nó da árvore acima está 69% cheio.
 
-(a) Determine o <ins>número de entradas</ins> nos nós internos e nos nós folhas (nível 3). 
+(d) Determine o <ins>número de entradas</ins> nos nós internos e nos nós folhas (nível 3). 
 
-(b) O número total de entradas do índice na Árvore B+ até o nível 3 (nível folha).
+(e) O número total de entradas do índice na Árvore B+ até o nível 3 (nível folha).
 
-(c) É correto afirmar que a Árvore B tende a acomodar menos número de chaves, para um determinado número de níveis de índice, em relação a Árvore B+? Justifique.
+(f) É correto afirmar que a Árvore B tende a acomodar menos número de chaves, para um determinado número de níveis de índice, em relação a Árvore B+? Justifique.
 
 [Uma solução](./topico-21solucao-02.md)
