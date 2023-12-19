@@ -244,7 +244,7 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 
 &#9888; **`Durabilidade`**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;As alterações aplicadas ao banco de dados por uma transação confirmada,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;... ou seja, a transação executor com sucesso,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;... ou seja, a transação executou com sucesso,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... devem persistir no banco de dados.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... Essas alterações não devem ser perdidas devido a qualquer falha posterior de outras transações.
 
