@@ -124,7 +124,7 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 &nbsp;&nbsp;&nbsp;&nbsp;... A transação **T1** transfere N reservas,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... de um voo cujos assentos reservados é armazenado no item X,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... para outro voo cujos reservados é armazenado em Y.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;... A transação **T1** reserva M assentos no primeiro vôo (X).
+&nbsp;&nbsp;&nbsp;&nbsp;... A transação **T2** reserva M assentos no primeiro vôo (X).
 
 |T1|T2|
 |-|-|
