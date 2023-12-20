@@ -285,10 +285,8 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 
 #### Exercício:<br>
 
-✍ Pesquisar sobre ESCALONAMENTO DE TRANSAÇÕES:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>recuperação de transações</ins>,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>serialização de transações</ins>.<br>
-
-.
+✍ Pesquisar sobre ESCALONAMENTO DE TRANSAÇÕES:<br><be>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>recuperação de transações</ins> ,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>serialização de transações</ins> .
 
 <hr style="border:2px solid blue">
