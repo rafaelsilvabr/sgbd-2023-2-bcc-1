@@ -41,6 +41,7 @@ go
 <hr style="border:2px solid blue">
 
 #### Exercício:<br>
+
 ✍ Pesquisar sobre BEGIN TRANSACTION, COMMIT TRANSACTION, ROLLBACK TRANSACTION, SAVE TRANSACTION.
 
 <hr style="border:2px solid blue">
@@ -282,7 +283,12 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 
 <hr style="border:2px solid blue">
 
+#### Exercício:<br>
 
-&#9918;&#9888;&#10004;<br>
-&#9752;&#x270D;&#9745;<br>
-≤ &#8924;&#8212; &#8756;
+✍ Pesquisar sobre ESCALONAMENTO DE TRANSAÇÕES:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>recuperação de transações</ins>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... escalonamentos que preservam a <ins>serialização de transações</ins>.<br>
+
+.
+
+<hr style="border:2px solid blue">
