@@ -5,7 +5,7 @@
 
 |_Item do conteúdo_|_Item do conteúdo_|
 |-|-|
-|6. <ins>**VISÃO GERAL**</ins>|4.|
+|1. <ins>**VISÃO GERAL**</ins>|4.|
 |2.|5.|
 |3.|6.|
 
