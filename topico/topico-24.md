@@ -29,7 +29,7 @@ Segundo a propriedade DURABIDADE para transações de banco de dados (ver [Tópi
 
 @@ IMPORTANTE 1: há escalonamentos recuperáveis para os quais a recuperação é relativamente simples ...@@
 @@               há escalonamentos recuperáveis onde o processo de recuperação é mais complexo.@@
-@@ IMPORTANTE 2: um algoritmo de recuperação pode ser concebido para qualquer cronograma recuperável ...@@
+@@ IMPORTANTE 2: um algoritmo de recuperação pode ser concebido para qualquer escalonameto recuperável ...@@
 @@               mas deve haver dados disponíveis sobre as transações (em curso e concluídas) ...@@
 @@                        e tais dads estão, em geral, em [arquivos de] log do banco de dados.@@
 ```
