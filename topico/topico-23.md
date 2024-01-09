@@ -58,7 +58,7 @@ Duas operações são ditas conflitantes se:<br>
 &#x270D; `Exemplos:`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... r<sub>1</sub>(X) e w<sub>2</sub>(X) SÃO conflitantes;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... w<sub>1</sub>(X) e r<sub>2</sub>(X) SÃO conflitantes;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... w<sub>1</sub>(X) e w<sub>2</sub>(Y) SÃO conflitantes;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... w<sub>1</sub>(X) e w<sub>2</sub>(X) SÃO conflitantes;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... r<sub>1</sub>(X) e w<sub>2</sub>(Y) NÃO SÃO conflitantes;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... r<sub>1</sub>(X) e r<sub>2</sub>(X) NÃO SÃO conflitantes;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... r<sub>1</sub>(X) e w<sub>1</sub>(X) NÃO SÃO conflitantes.<br>
