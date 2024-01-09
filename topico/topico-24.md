@@ -33,7 +33,7 @@ Segundo a propriedade DURABIDADE para transações de banco de dados (ver [Tópi
 @@               mas deve haver dados disponíveis sobre as transações (em curso e concluídas) ...@@
 @@                        e tais dads estão, em geral, em [arquivos de] log do banco de dados.@@
 ```
-Alguns escalonamentos recuperáveis podem exigir um processo de recuperação complexo, como veremos, mas se for mantida informação suficiente (no log), um algoritmo de recuperação pode ser concebido para qualquer cronograma recuperável.
+Alguns escalonamentos recuperáveis podem exigir um processo de recuperação complexo, como veremos, mas se for mantida informação suficiente (no log), um algoritmo de recuperação pode ser concebido para qualquer escalonamento recuperável.
 
 
 Na figura abaixo, **S<sub>c</sub>** é um escalonamento não-recuperável.
