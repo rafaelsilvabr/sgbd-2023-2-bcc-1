@@ -168,7 +168,7 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 
 &#9888; <ins>**`ESCALONAMENTO NÃO SERIAL de Transações` — O Problema da Atualização Perdida** </ins>
 
-&#9918; Uma transação <ins>_sobrepõe_</ins> a atualizadção de dados de outra transação:<br>
+&#9918; Uma transação <ins>_sobrepõe_</ins> a atualização de dados de outra transação:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... na figura abaixo, T2 lê o valor de X (via _read_item_),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... mas antes que T1 alterasse X no banco de dados (via _write_item_),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... então, o valor atualizado resultante de T1 é perdido, e<br>
